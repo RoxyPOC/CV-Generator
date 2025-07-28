@@ -1,0 +1,74 @@
+/* Dark mode toggle styles */
+#dark-mode-toggle {
+  display: none;
+}
+#theme-toggle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  background-color: #1a1822;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.toggle-label span {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  color: white;
+}
+.toggle-label .sun-icon {
+  left: 8px;
+}
+.toggle-label .moon-icon {
+  right: 13px;
+}
+.toggle-ball {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(216, 210, 210, 0.116);
+  border-radius: 40%;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+#dark-mode-toggle:checked + .toggle-label .toggle-ball {
+  transform: translateX(35px);
+}
+/* Light theme */
+body {
+  background-color: #f4f4f4;
+  color: #1a1a1a;
+}
+input {
+  color: #1a1a1a;
+}
+/* Dark mode styles */
+body.dark-mode {
+  background-color: rgb(21, 19, 31);
+  color: white;
+}
+.toggle-label .sun-icon,
+.toggle-label .moon-icon {
+  color: #222;
+  transition: color 0.5s ease;
+}
+body.dark-mode .toggle-label {
+  background-color: #1a1822;
+}
+body.dark-mode .sun-icon,
+body.dark-mode .moon-icon {
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+.toggle-label {
+  background-color: #fff;
+  transition: background-color 0.5s ease;
+}

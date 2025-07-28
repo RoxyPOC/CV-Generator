@@ -1,0 +1,145 @@
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+}
+button {
+  background-color: white;
+}
+button:hover {
+  background-color: rgb(226, 224, 224);
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.arrow-next {
+  display: flex;
+  align-items: center;
+}
+.complete-btn {
+  position: relative;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.complete-btn:hover {
+  background: #e6e2e2;
+}
+.confetti-trigger {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.skills {
+  font-size: 1rem;
+  font-weight: 200;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.skills-fields {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 1rem;
+}
+.skills-fields label {
+  flex: 1;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  font-size: 1rem;
+  /* margin-bottom: 5px; */
+  text-align: left;
+}
+input {
+  margin-top: 4px;
+  background-color: rgba(216, 210, 210, 0.116);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.2s ease;
+}
+input:focus {
+  border-color: #b0a8dd;
+  outline: none;
+}
+.delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: self-end;
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  background-color: rgb(145, 49, 49);
+  color: white;
+}
+.delete-btn:hover {
+  background-color: rgb(109, 35, 35);
+}
+@media (min-width: 480px) {
+  .header-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .buttons {
+    justify-content: flex-end;
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .skills {
+    padding: 2rem;
+  }
+
+  .skills-fields {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
