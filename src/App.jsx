@@ -39,7 +39,7 @@ export default function App() {
   });
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CV-Generator/">
       <div className="app-container">
         <div className="form-side">
           <NavBarIcons />
