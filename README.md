@@ -12,7 +12,7 @@ A responsive resume builder web app with real-time PDF preview and export — bu
 
 ## 🖥️ Demo
 
-> [(link)](https://roxypoc.github.io/CV-Generator/)
+> [(CV GEN)](https://roxypoc.github.io/CV-Generator/)
 
 ## 🧰 Tech Stack
 
