@@ -9,6 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
+
+
+
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.0",
